@@ -13,6 +13,7 @@
 		65F2AE861E479A990026150E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F2AE851E479A990026150E /* Assets.xcassets */; };
 		65F2AE891E479A990026150E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F2AE871E479A990026150E /* LaunchScreen.storyboard */; };
 		65F2AE911E4910610026150E /* DefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F2AE901E4910610026150E /* DefVC.swift */; };
+		65F3D0A01E4B5788008BD66C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3D09F1E4B5788008BD66C /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		65F2AE881E479A990026150E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65F2AE8A1E479A990026150E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F2AE901E4910610026150E /* DefVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefVC.swift; sourceTree = "<group>"; };
+		65F3D09F1E4B5788008BD66C /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				65F2AE7E1E479A990026150E /* AppDelegate.swift */,
 				65F2AE901E4910610026150E /* DefVC.swift */,
+				65F3D09F1E4B5788008BD66C /* Emoji.swift */,
 				65F2AE801E479A990026150E /* MainVC.swift */,
 				65F2AE821E479A990026150E /* Main.storyboard */,
 				65F2AE851E479A990026150E /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				65F2AE811E479A990026150E /* MainVC.swift in Sources */,
 				65F2AE911E4910610026150E /* DefVC.swift in Sources */,
+				65F3D0A01E4B5788008BD66C /* Emoji.swift in Sources */,
 				65F2AE7F1E479A990026150E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				65F2AE8F1E479A990026150E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

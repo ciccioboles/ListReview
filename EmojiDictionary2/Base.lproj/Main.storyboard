@@ -57,13 +57,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph5-od-EHD">
-                                <rect key="frame" x="86" y="104" width="203" height="223.5"/>
+                                <rect key="frame" x="86" y="104" width="203" height="224"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="187"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cow." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOB-Ll-1v7">
-                                <rect key="frame" x="136.5" y="377.5" width="102" height="21"/>
+                                <rect key="frame" x="137" y="378" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cow." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0W-Au-PRn">
+                                <rect key="frame" x="136" y="437" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cow." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpA-xl-9am">
+                                <rect key="frame" x="136" y="500" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,13 +83,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vpA-xl-9am" firstAttribute="top" secondItem="t0W-Au-PRn" secondAttribute="bottom" constant="41.5" id="23N-eO-fOn"/>
+                            <constraint firstItem="vpA-xl-9am" firstAttribute="centerX" secondItem="4Sy-f8-wIp" secondAttribute="centerX" id="3LL-8I-3kv"/>
+                            <constraint firstItem="t0W-Au-PRn" firstAttribute="leading" secondItem="vpA-xl-9am" secondAttribute="leading" id="3Lc-WU-2xC"/>
                             <constraint firstItem="ph5-od-EHD" firstAttribute="centerX" secondItem="4Sy-f8-wIp" secondAttribute="centerX" id="4qe-Cg-2V9"/>
                             <constraint firstItem="dOB-Ll-1v7" firstAttribute="top" secondItem="ph5-od-EHD" secondAttribute="bottom" constant="50" id="DJ7-HJ-JL4"/>
                             <constraint firstItem="dOB-Ll-1v7" firstAttribute="centerX" secondItem="4Sy-f8-wIp" secondAttribute="centerX" id="JQf-UE-9xU"/>
                             <constraint firstItem="ph5-od-EHD" firstAttribute="top" secondItem="na3-dz-jlA" secondAttribute="bottom" constant="40" id="sFC-r7-qOW"/>
+                            <constraint firstItem="t0W-Au-PRn" firstAttribute="top" secondItem="dOB-Ll-1v7" secondAttribute="bottom" constant="38.5" id="z9o-CE-mlg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthDate" destination="vpA-xl-9am" id="txS-IM-b0Z"/>
+                        <outlet property="emojiCategory" destination="t0W-Au-PRn" id="BVe-Zx-Yzq"/>
                         <outlet property="emojiDef" destination="dOB-Ll-1v7" id="Gho-75-jqu"/>
                         <outlet property="emojiLabel" destination="ph5-od-EHD" id="Nbn-PC-Y4O"/>
                     </connections>
